@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"sync"
-	"time"
 )
 
 // Question 3: Channel Synchronization
@@ -36,12 +35,12 @@ func Increment2() {
 	}
 }
 
-func main() {
+// func main() {
 
-	go Increment1()
-	go Increment2()
+// 	go Increment1()
+// 	go Increment2()
 
-	time.Sleep(time.Second * 3)
+// 	time.Sleep(time.Second * 3)
 
-	fmt.Println(value)
-}
+// 	fmt.Println(value)
+// }
