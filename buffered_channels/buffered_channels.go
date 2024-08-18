@@ -1,4 +1,4 @@
-// package main
+package main
 
 // import (
 // 	"fmt"
@@ -44,12 +44,12 @@
 // 	}
 // }
 
-package main
+// package main
 
-import (
-	"fmt"
-	"time"
-)
+// import (
+// 	"fmt"
+// 	"time"
+// )
 
 // func main() {
 // 	// Creating a buffered channel with a capacity of 3
@@ -76,17 +76,17 @@ import (
 // 	time.Sleep(6 * time.Second)
 // }
 
-func main() {
+// func main() {
 
-	ch := make(chan int)
+// 	ch := make(chan int)
 
-	go func(ch chan int) {
-		time.Sleep(time.Second * 5)
-		val := <-ch
-		fmt.Println(val)
-	}(ch)
+// 	go func(ch chan int) {
+// 		time.Sleep(time.Second * 5)
+// 		val := <-ch
+// 		fmt.Println(val)
+// 	}(ch)
 
-	ch <- 14
-	fmt.Println("End...")
-	time.Sleep(time.Second * 6)
-}
+// 	ch <- 14
+// 	fmt.Println("End...")
+// 	time.Sleep(time.Second * 6)
+// }
